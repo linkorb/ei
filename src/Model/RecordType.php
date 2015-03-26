@@ -40,5 +40,10 @@ class RecordType
     {
         $this->elementTypes[$e->getCode()] = $e;
     }
+    
+    public function getElementTypes()
+    {
+        return $this->elementTypes;
+    }
 
 }

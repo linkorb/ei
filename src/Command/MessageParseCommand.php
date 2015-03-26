@@ -43,7 +43,27 @@ class MessageParseCommand extends Command
         $messageparser = new MessageParser();
         $message = $messageparser->parse($standard, $messagedata);
         
-        print_r($message);
+        //print_r($message->getRecords());
+        
+        $o = '';
+        foreach($message->getRecords() as $r) {
+            $code = $r->getCode();
+            $recordType = $standard->getRecordType($code);
+            $name = $recordType->getName();
+            $o .= $code . ":" . $name . "\n";
+            
+            foreach ($recordType->getElementTypes() as $et) {
+                $ec = $et->getCode();
+                $o .= " - " . $ec;
+                $o .= ":" . $et->getName();
+                $e = $r->getElementByCode($ec);
+                $value = $e->getValue();
+                $value = str_replace(' ', '.', $value);
+                $o .= "=`" . $value . "`\n";
+            }
+        }
+        echo $o;
+        exit();
 
     }
 }
