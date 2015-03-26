@@ -1,0 +1,28 @@
+{
+    "name": "linkorb/ei",
+    "description": "EI standard library",
+    "keywords": ["ei", "vektis", "vk301", "vk302"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joost Faassen",
+            "email": "j.faassen@linkorb.com",
+            "homepage": "http://www.linkorb.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "e-mail": "support@linkorb.com",
+        "issues": "https://github.com/linkorb/ei/issues"
+    },
+    "require": {
+        "symfony/console": "~2.4"
+    },
+    "bin": ["bin/ei"],
+    "autoload": {
+        "psr-4": {
+            "Ei\\": "src/"
+        }
+    }
+}
