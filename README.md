@@ -13,4 +13,4 @@ Parse a standard file from CSV
     
 ## More info and utilities
 
-* (Vektis EI portal)[http://ei.vektis.nl/]
+* [Vektis EI portal](http://ei.vektis.nl/)
