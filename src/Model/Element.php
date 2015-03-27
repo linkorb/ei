@@ -32,4 +32,9 @@ class Element
         $this->value = $value;
     }
     
+    public function getType()
+    {
+        return $this->elementType;
+    }
+    
 }
