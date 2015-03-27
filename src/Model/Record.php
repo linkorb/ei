@@ -35,4 +35,9 @@ class Record
     {
         return $this->elements;
     }
+    
+    public function getType()
+    {
+        return $this->recordType;
+    }
 }
