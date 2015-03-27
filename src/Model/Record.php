@@ -30,4 +30,9 @@ class Record
     {
         return $this->elements[$code];
     }
+    
+    public function getElements()
+    {
+        return $this->elements;
+    }
 }
