@@ -17,7 +17,7 @@
         "issues": "https://github.com/linkorb/ei/issues"
     },
     "require": {
-        "symfony/console": "~2.4"
+        "symfony/console": "^2.4|^3.0|^4.0|^5.0"
     },
     "bin": ["bin/ei"],
     "autoload": {
